@@ -1,23 +1,26 @@
-import logo from './logo.svg';
+import React, {useState} from 'react';
 import './App.css';
+import Modal from './Modal/Modal';
 
 function App() {
+  const [modalActive, setModalActive] = useState(true);
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <main>
+        <button className='open-btn' onClick={() => setModalActive(true)}>Открыть модальное окно</button>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis iusto assumenda fuga impedit unde quod possimus similique ipsum delectus est harum modi aperiam suscipit corrupti ea vitae maiores, repellendus odio?</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis iusto assumenda fuga impedit unde quod possimus similique ipsum delectus est harum modi aperiam suscipit corrupti ea vitae maiores, repellendus odio?</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis iusto assumenda fuga impedit unde quod possimus similique ipsum delectus est harum modi aperiam suscipit corrupti ea vitae maiores, repellendus odio?</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis iusto assumenda fuga impedit unde quod possimus similique ipsum delectus est harum modi aperiam suscipit corrupti ea vitae maiores, repellendus odio?</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis iusto assumenda fuga impedit unde quod possimus similique ipsum delectus est harum modi aperiam suscipit corrupti ea vitae maiores, repellendus odio?</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis iusto assumenda fuga impedit unde quod possimus similique ipsum delectus est harum modi aperiam suscipit corrupti ea vitae maiores, repellendus odio?</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis iusto assumenda fuga impedit unde quod possimus similique ipsum delectus est harum modi aperiam suscipit corrupti ea vitae maiores, repellendus odio?</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis iusto assumenda fuga impedit unde quod possimus similique ipsum delectus est harum modi aperiam suscipit corrupti ea vitae maiores, repellendus odio?</p>
+      </main>
+      <Modal active={modalActive} setActive={setModalActive}>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet laborum veniam aliquam ea nisi atque quam omnis eveniet explicabo. Sed distinctio velit blanditiis at facere quisquam maiores ut tenetur aliquid!</p>
+      </Modal>
     </div>
   );
 }
