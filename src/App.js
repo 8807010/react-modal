@@ -1,10 +1,10 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import Modal from './Modal/Modal';
 
 function App() {
   const [modalActive, setModalActive] = useState(true);
-  
+
   return (
     <div className="App">
       <main>
